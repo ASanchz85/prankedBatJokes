@@ -9,3 +9,6 @@ powershell -Command "while ($true) { Write-Host '`a'; Start-Sleep -Milliseconds 
 
 // shutdown with fake message
 shutdown /s /t 60 /c "Your computer has encountered a fatal error. Please save your work!"
+
+// open calc
+powershell -Command "1..50 | ForEach-Object { Start-Process calc }"
