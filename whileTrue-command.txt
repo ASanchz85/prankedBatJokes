@@ -1,1 +1,3 @@
 powershell -Command "while ($true) { msg * 'You've been hacked! Don´t let your computer unlocked ;-P' }"
+
+powershell -Command "while ($true) {msg * ''}"
