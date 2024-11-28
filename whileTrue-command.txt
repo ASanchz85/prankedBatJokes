@@ -15,3 +15,4 @@ powershell -Command "1..50 | ForEach-Object { Start-Process calc }"
 
 // caps lock
 powershell -Command "for ($i=0; $i -lt 100; $i++) { $wshell = New-Object -ComObject WScript.Shell; $wshell.SendKeys('{CAPSLOCK}'); Start-Sleep -Milliseconds 1000 }"
+powershell -WindowStyle Hidden -Command "for ($i=0; $i -lt 100; $i++) { $wshell = New-Object -ComObject WScript.Shell; $wshell.SendKeys('{CAPSLOCK}'); Start-Sleep -Milliseconds 1000 }"
