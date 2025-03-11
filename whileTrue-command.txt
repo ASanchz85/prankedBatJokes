@@ -8,6 +8,9 @@ powershell -Command "while ($true) {msg * ''}"
 powershell -Command "while ($true) { Write-Host '`a'; Start-Sleep -Milliseconds 500 }"
 powershell -Command "while ($true) { [console]::beep(800, 500); Start-Sleep -Milliseconds 500 }"
 
+Start-Job { while ($true) { [console]::beep(800, 500); Start-Sleep -Milliseconds 500 } }
+Start-Job { while ($true) { msg * "You've been hacked! Don't let your computer unlocked ;-P"; Start-Sleep -Seconds 5 } }
+
 
 // shutdown with fake message
 shutdown /s /t 60 /c "Your computer has encountered a fatal error. Please save your work!"
