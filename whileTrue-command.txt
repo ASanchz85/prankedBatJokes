@@ -2,6 +2,8 @@ powershell -Command "while ($true) { msg * 'You've been hacked! Don´t let your 
 
 powershell -Command "while ($true) {msg * ''}"
 
+//text-to-script
+powershell -WindowStyle Hidden -Command "Add-Type -AssemblyName System.Speech; $speak = New-Object System.Speech.Synthesis.SpeechSynthesizer; while ($true) { $speak.Speak('Féliz Navidad!, We wish you merry christmas!'); Start-Sleep -Seconds 10 }"
 
 //for beeping:
 
